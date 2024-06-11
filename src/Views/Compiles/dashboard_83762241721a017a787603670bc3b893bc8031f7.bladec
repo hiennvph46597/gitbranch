@@ -1,0 +1,23 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('title'); ?>
+Dashboard
+<?php $this->stopSection(); ?>
+
+<?php $this->startSection('content'); ?>
+<div class="row">
+ <div class="col-12">
+ <div class="page_title_box d-flex align-items-center justify-content-between">
+ <div class="page_title_left">
+ <h3 class="f_s_30 f_w_700 text_white">Dashboard</h3>
+ 
+ </div>
+ <a href="#" class="white_btn3">Create Report</a>
+ </div>
+ </div>
+</div>
+<div class="row ">
+ 
+</div>
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layouts.master'); } ?>
